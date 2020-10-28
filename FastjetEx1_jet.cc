@@ -109,23 +109,6 @@ FastJetEx1::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
 //      input_particles.push_back(fastjet::PseudoJet(itTrack->px(),itTrack->py(),itTrack->pz(),itTrack->energy()));
 
     }
-/*      double R = 0.6;
-        fastjet::JetDefinition jet_def(fastjet::antikt_algorithm, R);
-    fastjet::ClusterSequence clust_seq(input_particles, jet_def);
-
-        //double ptmin = 5.0;
-        std::vector<fastjet::PseudoJet> inclusive_jets = clust_seq.inclusive_jets();
-
-        std::cout<< "Number  of jets = "<<inclusive_jets.size()<<std::endl;
-        for (unsigned int i = 0; i < inclusive_jets.size(); i++) {
-     printf("%5u %15.8f %15.8f %15.8f\n",
-            i, inclusive_jets[i].rap(), inclusive_jets[i].phi(),
-            inclusive_jets[i].perp());
-
-   }
-
-
-*/
 
 #ifdef THIS_IS_AN_EVENT_EXAMPLE
    Handle<ExampleData> pIn;
